@@ -1,70 +1,37 @@
-# Expense Calculator
+# Web Application: Expense Calculator
 
-A web application for calculating and analyzing monthly expenses.
+## Goal  
+Develop a web application that calculates key indicators of monthly expenses based on a user's list of expenses.
 
-## Description
+## Tools  
+- **CursorAI** for generating HTML/JS code  
+- **CodePen** / **JSFiddle** for testing and prototyping
 
-This simple web application allows users to:
-- Add and remove expenses by category
-- Calculate total expenses
-- Determine average daily expenses
-- Track the three largest expenses
+## Input Format  
+The user inputs their expenses as a table with the following columns:
 
-## Features
+| Category       | Amount ($) |
+|----------------|------------|
+| Groceries      | 15,000     |
+| Rent           | 40,000     |
+| Transportation | 5,000      |
+| Entertainment  | 10,000     |
+| Communication  | 2,000      |
+| Gym            | 3,000      |
 
-- **Adding Expenses**: Enter category and amount
-- **Removing Expenses**: Ability to delete any expense from the list
-- **Calculations**:
-  - Total sum of all expenses
-  - Average daily expense (total sum / 30 days)
-  - Top 3 largest expenses
+## Functionality  
+The application should provide the following features:
 
-## Technologies
+- Add new expenses to the list  
+- Calculate the **total amount** of expenses  
+- Calculate the **average daily expense** (e.g., total expenses divided by 30 days)  
+- Display the **top 3 largest expenses**  
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
+## Expected Result  
+After entering the data and clicking the **"Calculate"** button, the application should display:
 
-## Installation and Setup
+- Total amount of expenses (e.g., 75,000 $)  
+- Average daily expense (e.g., 2,500 $)  
+- Top 3 largest expenses (e.g., Rent (40,000), Groceries (15,000), Entertainment (10,000))  
 
-1. Clone the repository:
-```bash
-git clone [repository URL]
-```
-
-2. Open `index.html` in any modern web browser
-
-## Usage
-
-1. Enter expense category (e.g., "Groceries", "Rent", "Transportation")
-2. Enter expense amount in dollars
-3. Click "Add Expense" button to add the expense
-4. Repeat steps 1-3 for all expenses
-5. Click "Calculate" button to get results
-
-## Project Structure
-
-```
-expense-calculator/
-├── index.html      # Main HTML file
-├── style.css       # Application styles
-├── script.js       # JavaScript logic
-└── README.md       # Project documentation
-```
-
-## Features
-
-- Modern and responsive design
-- Input validation
-- Number formatting with thousand separators
-- Ability to delete expenses
-- Instant results update
-
-## Requirements
-
-- Modern web browser with JavaScript support
-- No internet connection required (works locally)
-
-## License
-
-MIT License
+---
